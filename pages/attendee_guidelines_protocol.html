@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attendee Guidelines & Protocol - PFE Defense Portal</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <meta name="description" content="Essential guidelines and protocols for PFE thesis defense attendees. Learn proper etiquette, dress code, and expectations for academic defense ceremonies." />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fpfedefens3199back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.5"></script>
+</head>
+<body class="bg-surface min-h-screen">
+    <!-- Header Navigation -->
+    <header class="bg-white shadow-subtle sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <svg class="h-8 w-8 text-primary mr-3" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2L3 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-9-5z"/>
+                        <path d="M9 12l2 2 4-4" stroke="white" stroke-width="2" fill="none"/>
+                    </svg>
+                    <h1 class="text-xl font-semibold text-primary">PFE Defense Portal</h1>
+                </div>
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="attendee_guidelines_protocol.html" class="text-primary font-medium border-b-2 border-secondary px-2 py-1">Guidelines</a>
+                    <a href="../attendance-form.html" class="btn-primary">Register Now</a>
+                </div>
+                <button class="md:hidden p-2 text-primary">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        <div class="md:hidden absolute top-16 left-0 right-0 bg-white shadow-elevated border-t border-border-light hidden" id="mobileMenu">
+            <div class="px-4 py-4 flex flex-col items-start space-y-2">
+                <a href="attendee_guidelines_protocol.html" class="w-full text-primary font-medium border-b border-border px-4 py-2 hover:bg-primary-50 rounded-md transition">📄 Guidelines</a>
+                <a href="../attendance-form.html" class="w-full text-white bg-primary font-semibold text-center px-4 py-2 rounded-md hover:bg-primary-700 transition">📝 Register Now</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-primary-50 to-secondary-50 py-16">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="inline-flex items-center bg-white px-4 py-2 rounded-full shadow-subtle mb-6">
+                <svg class="h-5 w-5 text-secondary mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+                <span class="text-sm font-medium text-primary">Essential Defense Protocol</span>
+            </div>
+            <h1 class="text-4xl md:text-5xl font-bold text-primary mb-6">
+                Attendee Guidelines & <span class="text-gradient-primary">Protocol</span>
+            </h1>
+            <p class="text-xl text-text-secondary max-w-3xl mx-auto leading-relaxed">
+                Welcome to the PFE thesis defense for the project: <strong>Building an Advanced Analytics Pipeline for HSE Monitoring</strong>.<br/>
+                This project focuses on combining real-time data engineering, predictive AI, and safety compliance automation in industrial settings.<br/>
+                🗓️ <strong>Defense Date:</strong> July 10, 2025
+            </p>
+        </div>
+    </section>
+
+    <!-- What to Expect Section -->
+    <section class="py-16 bg-white border-t border-border-light">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold text-primary mb-4">What to Expect</h2>
+            <p class="text-text-secondary text-lg">
+                Attendees will be welcomed and guided through a structured defense session that includes a presentation, Q&A, and final deliberation.<br>
+                Refreshments and informal networking will follow. Please arrive early and plan to stay through the full ceremony.
+            </p>
+        </div>
+    </section>
+
+    <!-- Dress Code Section -->
+    <section class="py-16 bg-surface">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold text-primary mb-4">Dress Code</h2>
+            <p class="text-text-secondary text-lg">
+                🧥 Please dress in formal or smart casual attire. Avoid overly bright or casual clothing. Be respectful of the professional academic setting.
+            </p>
+        </div>
+    </section>
+
+    <!-- Thanks Section -->
+    <section class="py-12 bg-white border-t border-border-light">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-2xl font-bold text-primary mb-4">A Final Word</h2>
+            <p class="text-text-secondary text-lg">
+                I would like to extend my deepest gratitude to everyone who has supported and encouraged me throughout this journey — colleagues, mentors, jury members, and all guests. Your presence today means the world to me. Thank you! 🙏
+            </p>
+        </div>
+    </section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const mobileMenuButton = document.querySelector("header button");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    if (mobileMenuButton && mobileMenu) {
+      mobileMenuButton.addEventListener("click", function (event) {
+        event.stopPropagation();
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      document.addEventListener("click", function (event) {
+        const isClickInside = mobileMenu.contains(event.target) || mobileMenuButton.contains(event.target);
+        if (!isClickInside) {
+          mobileMenu.classList.add("hidden");
+        }
+      });
+    }
+  });
+</script>
+<script id="dhws-dataInjector" src="/public/dhws-data-injector.js"></script>
+</body>
+</html>

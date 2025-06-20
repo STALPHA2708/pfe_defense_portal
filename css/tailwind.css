@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Primary Colors */
+  --color-primary: #1B365D; /* Academic authority and institutional trust */
+  --color-primary-50: #F0F4F8;
+  --color-primary-100: #D9E2EC;
+  --color-primary-200: #BCCCDC;
+  --color-primary-300: #9FB3C8;
+  --color-primary-400: #829AB1;
+  --color-primary-500: #627D98;
+  --color-primary-600: #486581;
+  --color-primary-700: #334E68;
+  --color-primary-800: #243B53;
+  --color-primary-900: #1B365D;
+
+  /* Secondary Colors */
+  --color-secondary: #D4AF37; /* Achievement celebration and milestone recognition */
+  --color-secondary-50: #FEFCF0;
+  --color-secondary-100: #FDF6D3;
+  --color-secondary-200: #FBEAA6;
+  --color-secondary-300: #F7DD79;
+  --color-secondary-400: #F3D04C;
+  --color-secondary-500: #EFC319;
+  --color-secondary-600: #D4AF37;
+  --color-secondary-700: #B8942F;
+  --color-secondary-800: #9C7A27;
+  --color-secondary-900: #80601F;
+
+  /* Accent Colors */
+  --color-accent: #8B4513; /* Warm academic tradition and scholarly heritage */
+  --color-accent-50: #F7F3F0;
+  --color-accent-100: #EDE2D6;
+  --color-accent-200: #DBC5AD;
+  --color-accent-300: #C9A884;
+  --color-accent-400: #B78B5B;
+  --color-accent-500: #A56E32;
+  --color-accent-600: #8B4513;
+  --color-accent-700: #7A3D11;
+  --color-accent-800: #69350F;
+  --color-accent-900: #582D0D;
+
+  /* Background Colors */
+  --color-background: #FFFFFF; /* Clean canvas for focused interaction */
+  --color-surface: #F8F9FA; /* Subtle elevation and content organization */
+
+  /* Text Colors */
+  --color-text-primary: #2C3E50; /* Clear readability for extended content */
+  --color-text-secondary: #6C757D; /* Hierarchy without losing accessibility */
+
+  /* Status Colors */
+  --color-success: #28A745; /* Positive confirmation and completed actions */
+  --color-warning: #FFC107; /* Gentle attention without alarm */
+  --color-error: #DC3545; /* Helpful guidance for form corrections */
+
+  /* Border Colors */
+  --color-border: #E9ECEF;
+  --color-border-light: #F1F3F4;
+
+  /* Shadow Variables */
+  --shadow-subtle: 0 2px 8px rgba(27, 54, 93, 0.1);
+  --shadow-elevated: 0 8px 24px rgba(27, 54, 93, 0.15);
+}
+
+@layer base {
+  body {
+    font-family: 'Inter', sans-serif;
+    color: var(--color-text-primary);
+    background-color: var(--color-background);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    color: var(--color-text-primary);
+  }
+
+  .font-accent {
+    font-family: 'Crimson Text', serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 ease-out;
+    box-shadow: var(--shadow-elevated);
+  }
+
+  .btn-primary:hover {
+    @apply bg-primary-800 transform -translate-y-0.5;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary text-primary px-6 py-3 rounded-lg font-semibold transition-all duration-300 ease-out;
+    box-shadow: var(--shadow-subtle);
+  }
+
+  .btn-secondary:hover {
+    @apply bg-secondary-600 transform -translate-y-0.5;
+  }
+
+  .form-input {
+    @apply w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300 ease-out;
+  }
+
+  .card {
+    @apply bg-white rounded-lg p-6;
+    box-shadow: var(--shadow-subtle);
+  }
+
+  .card-elevated {
+    @apply bg-white rounded-lg p-6;
+    box-shadow: var(--shadow-elevated);
+  }
+}
+
+@layer utilities {
+  .text-gradient-primary {
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .animate-gentle {
+    transition: all 300ms ease-out;
+  }
+
+  .animate-celebration {
+    transition: all 400ms ease-out;
+  }
+}
